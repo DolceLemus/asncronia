@@ -10,13 +10,14 @@ userExc.prototype.toString = function (){
     return `${this.nombre} : "${this.mensaje}"`
 };
 
-let excepcion =  new userExc('Todo Mal');
-throw excepcion.toString();
+// let excepcion =  new userExc('Todo Mal');
+// throw excepcion.toString();
 
+// Para qué nos serviria declarar una excepción
 
-// let numero = prompt("ingresa 5 numeros");
+let numero = prompt("ingresa 5 numeros");
 
-// if(numero.length < 5){
-//     let excepcion =  new userExc('El numero ingresado no tiene la longitud necesaria');
-//     throw excepcion.toString();
-// }
+if(numero.length < 5){
+    let excepcion =  new userExc('El numero ingresado no tiene la longitud necesaria');
+    throw excepcion.toString();
+}
