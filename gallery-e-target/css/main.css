@@ -1,0 +1,6 @@
+.gallery-item{
+    display: inline-block;
+    width: 20%;
+    height: 5vh;
+    border: solid black 1px;
+}
