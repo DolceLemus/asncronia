@@ -19,7 +19,7 @@ window.onload = ()=>{
                 resolve("Stuff worked!");
                 return response.json();
             }else{
-                reject(Error("It broke"));
+                reject(new Error("It broke"));
             }
         }).then((myJson)=>{
             paintSelect(myJson);
