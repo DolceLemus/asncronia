@@ -1,4 +1,5 @@
-const greeting = (name)=>{
+
+greeting = (name)=>{
     console.log(`Hello ${name}`)
 }
 const processUserInput = (callback) => {
